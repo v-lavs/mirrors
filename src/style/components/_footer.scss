@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  background-color: $secondary-color;
+  color: $white;
+  padding: 65px 0 55px;
+
+  .logo-footer {
+    width: 82px;
+    height: 82px;
+    display: inline-block;
+  }
+
+  .right-bar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 44px;
+    font-weight: 300;
+
+    .icon {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+    }
+
+    .icon-call-answer {
+      font-size: 24px;
+    }
+  }
+}
