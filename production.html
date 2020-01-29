@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mirrors gallery</title>
+    <title>Mirrors production</title>
     <!--fonts-->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,900|Roboto+Condensed:300,700&display=swap"
           rel="stylesheet">
@@ -50,70 +50,32 @@
             </div>
         </div>
     </header>
-    <main class="main main-page page-gallery">
+    <main class="main main-page page-product" style="background-image: url(assets/img/bg-products.png);">
+
         <div class="container">
-                <h2 class="page__title  text_xxl">Галерея</h2>
-            <section class="section section-gallery text_xs">
-                <div class="container">
-                    <ul class="gallery">
-                        <li class="gallery__item">
-                            <a href="#" class="gallery__link" data-micromodal-trigger="gallery-modal" id="coupes">
-                                <div class="card" style="background-image: url(assets/img/closet-mirror.jpg);">
-                                    <div class="card__body">
-                                        <div class="card__title"><strong>Дзеркала</strong><br> для шаф-купе</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="gallery__item">
-                            <a href="#" class="gallery__link" data-micromodal-trigger="gallery-modal" id="walls">
-                                <div class="card" style="background-image: url(assets/img/wall-mirror.jpg);">
-                                    <div class="card__body">
-                                        <div class="card__title"><strong>Настінні</strong><br>дзеркала</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="gallery__item">
-                            <a href="#" class="gallery__link" data-micromodal-trigger="gallery-modal" id="doors">
-                                <div class="card" style="background-image: url(assets/img/glass-door.jpg);">
-                                    <div class="card__body">
-                                        <div class="card__title"><strong>Дверне</strong><br>скло</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="gallery__item">
-                            <a href="#" class="gallery__link" data-micromodal-trigger="gallery-modal" id="vitrage">
-                                <div class="card" style="background-image: url(assets/img/psevdo-vitrazhі.jpg);">
-                                    <div class="card__body">
-                                        <div class="card__title"><strong>Псевдовітражі</strong><br>скло</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="gallery__item">
-                            <a href="#" class="gallery__link" data-micromodal-trigger="gallery-modal" id="tables">
-                                <div class="card" style="background-image: url(assets/img/table.jpg);">
-                                    <div class="card__body">
-                                        <div class="card__title"><strong>Столи</strong><br>скло</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="gallery__item">
-                            <a href="#" class="gallery__link" data-micromodal-trigger="gallery-modal" id="typeGlass">
-                                <div class="card" style="background-image: url(assets/img/glass-door.jpg);">
-                                    <div class="card__body">
-                                        <div class="card__title"><strong>Каталог</strong><br>видів скла</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
+            <h2 class="page__title  text_xxl">Виробництво</h2>
+            <section class="section section-product dynamic-content">
+                <ul>
+                    <li>Дзеркала для шаф купе, скляних перегородок, велика база даних:</li>
+                    <ul>
+                        <li>з художнім розписом по склу і дзеркалу;</li>
+                        <li>матування по плотеру;</li>
+                        <li>художній малюнок з переходом кольору;</li>
+                        <li>фарбування скла.</li>
                     </ul>
-                </div>
+                    <li>Настінні дзеркала по каталогах та ескізах замовника;</li>
+                    <li>Псевдовітражі та псевдовітражі з використанням фацетованих елементів;</li>
+                    <li>Гнуття скла R-300, 500, 247;</li>
+                    <li>Свердління отворів;</li>
+                    <li>Шліфування; </li>
+                    <li>Полірування кромки;</li>
+                    <li>Фацет;</li>
+                    <li>Поклейка атравматичної плівки;</li>
+                    <li>Скляні стільниці.</li>
+                </ul>
             </section>
         </div>
+
         <section class="section section-contact">
             <div class="container">
                 <div class="section__heading text_xs">
@@ -189,20 +151,6 @@
 <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script src="build/main.js"></script>
-<!--    MODAL   -->
-
-<div class="micromodal-slide modal gallery-modal" id="gallery-modal" aria-hidden="true">
-    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-        <div class="modal__container swiper-container" role="dialog" aria-modal="true" id="gallery-slider">
-            <div class="swiper-wrapper"></div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </div>
-</div>
 
 </body>
 </html>

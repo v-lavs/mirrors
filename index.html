@@ -9,6 +9,7 @@
           rel="stylesheet">
     <link rel="stylesheet" href="fonts/fonts.css">
     <!--styles-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="build/main.css">
 </head>
 
@@ -36,10 +37,10 @@
                         <a href="gallery.html" class="menu__link">Галерея</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link">Продукція</a>
+                        <a href="product.html" class="menu__link">Продукція</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link">Виробництво</a>
+                        <a href="production.html" class="menu__link">Виробництво</a>
                     </li>
                 </ul>
             </nav>
@@ -112,7 +113,7 @@
                 </div>
                 <ul class="gallery">
                     <li class="gallery__item">
-                        <a href="#" class="gallery__link">
+                        <a href="#" class="gallery__link" data-micromodal-trigger="gallery-modal" id="coupes">
                             <div class="card" style="background-image: url(assets/img/closet-mirror.jpg);">
                                 <div class="card__body">
                                     <div class="card__title"><strong>Дзеркала</strong><br> для шаф-купе</div>
@@ -121,7 +122,7 @@
                         </a>
                     </li>
                     <li class="gallery__item">
-                        <a href="#" class="gallery__link">
+                        <a href="#" class="gallery__link" data-micromodal-trigger="gallery-modal" id="walls">
                             <div class="card" style="background-image: url(assets/img/wall-mirror.jpg);">
                                 <div class="card__body">
                                     <div class="card__title"><strong>Настінні</strong><br>дзеркала</div>
@@ -130,7 +131,7 @@
                         </a>
                     </li>
                     <li class="gallery__item">
-                        <a href="#" class="gallery__link">
+                        <a href="#" class="gallery__link" data-micromodal-trigger="gallery-modal" id="doors">
                             <div class="card" style="background-image: url(assets/img/glass-door.jpg);">
                                 <div class="card__body">
                                     <div class="card__title"><strong>Дверне</strong><br>скло</div>
@@ -216,7 +217,21 @@
     </footer>
 
 </div>
-
+<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script src="build/main.js"></script>
+<!--    MODAL   -->
+<div class="micromodal-slide modal gallery-modal" id="gallery-modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container swiper-container" role="dialog" aria-modal="true" id="gallery-slider">
+            <div class="swiper-wrapper"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

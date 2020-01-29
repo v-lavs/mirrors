@@ -57,12 +57,54 @@ body {
 }
 .page__title{
   font-weight: 900;
-  //font-size: 78px;
   color: $primary-color;
   text-align: left;
   line-height: 1.5;
 }
+.dynamic-content{
 
+  .section__text{
+    text-align: left;
+    p{
+      margin-bottom: 35px;
+    }
+    strong{
+      font-size: 32px;
+      font-weight: 700;
+      color: $primary-color;
+    }
+  }
+  ul{
+    text-align: left;
+    li{
+      position: relative;
+      font-family: $primary-fonts;
+      font-weight: 500;
+      line-height: 2;
+      color: #234276;
+      font-size: 24px;
+      @supports ((background-clip: text)  or  (-webkit-background-clip: text)) {
+        background: linear-gradient(92deg, #3567B7 0%, #234276 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: rgba(35, 66, 118, .2);
+        padding-left: 40px;
+      }
+      &:before{
+        position: absolute;
+        content: '';
+        background-image: url(../assets/img/icons/tick.svg);
+        display: inline-block;
+        z-index: 1;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
 .backdrop {
   display: none;
   position: fixed;
