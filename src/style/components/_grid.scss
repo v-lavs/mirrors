@@ -1,9 +1,28 @@
 //@import "../../../node_modules/bootstrap-4-grid/scss/grid.scss";
 
 
-@media all and (min-width: 1200px) {
+@include respond-to($xl) {
   .container {
     max-width: 1170px;
+    margin: 0 auto;
+  }
+}
+
+@include respond-to($lg) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@include respond-to($md) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@include respond-to($sm) {
+  .container {
+    max-width: 540px;
   }
 }
 

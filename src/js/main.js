@@ -34,8 +34,8 @@ $(document).ready(function () {
     /**
      * OWL-CAROUSEL SCRIPT
      **/
-    jQuery("#slider-carousel").owlCarousel({
-        items: 3,
+    jQuery(".slider-banner").owlCarousel({
+        items: 1,
         pagination: false,
         dots: false,
         nav: true,

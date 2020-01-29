@@ -15,6 +15,15 @@ $white: #fff;
 $black: #000000;
 
 
+/*
+* Breakpoints
+*/
+
+$xs: '(min-width: 576px)';
+$sm: '(max-width: 576px)';
+$md: '(max-width: 720px)';
+$lg: '(max-width: 992px)';
+$xl: '(max-width: 1200px)';
 
 
 
