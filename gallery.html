@@ -50,20 +50,15 @@
             </div>
         </div>
     </header>
-    <main class="main page-gallery">
+    <main class="main main-page page-gallery">
         <div class="container">
-            <div class="section__heading text_xs">
-                <h2 class="page__title  text_xl">Галерея</h2>
-
-            </div>
+                <h2 class="page__title  text_xxl">Галерея</h2>
             <section class="section section-gallery text_xs">
                 <div class="container">
-
                     <ul class="gallery">
                         <li class="gallery__item">
-                            <a href="#" class="gallery__link" id="btnGallery">
-                                <div class="card">
-                                    <img src="assets/img/closet-mirror.jpg" alt="closet mirror" class="img-gallery">
+                            <a href="#" class="gallery__link" data-micromodal-trigger="gallery-modal" id="coupes">
+                                <div class="card" style="background-image: url(assets/img/closet-mirror.jpg);">
                                     <div class="card__body">
                                         <div class="card__title"><strong>Дзеркала</strong><br> для шаф-купе</div>
                                     </div>
@@ -71,9 +66,8 @@
                             </a>
                         </li>
                         <li class="gallery__item">
-                            <a href="#" class="gallery__link">
-                                <div class="card">
-                                    <img src="assets/img/wall-mirror.jpg" alt="wall-mounted mirror" class="img-gallery">
+                            <a href="#" class="gallery__link" data-micromodal-trigger="gallery-modal" id="walls">
+                                <div class="card" style="background-image: url(assets/img/wall-mirror.jpg);">
                                     <div class="card__body">
                                         <div class="card__title"><strong>Настінні</strong><br>дзеркала</div>
                                     </div>
@@ -81,9 +75,8 @@
                             </a>
                         </li>
                         <li class="gallery__item">
-                            <a href="#" class="gallery__link">
-                                <div class="card">
-                                    <img src="assets/img/glass-door.jpg" alt="door glass" class="img-gallery">
+                            <a href="#" class="gallery__link" data-micromodal-trigger="gallery-modal" id="doors">
+                                <div class="card" style="background-image: url(assets/img/glass-door.jpg);">
                                     <div class="card__body">
                                         <div class="card__title"><strong>Дверне</strong><br>скло</div>
                                     </div>
@@ -91,9 +84,8 @@
                             </a>
                         </li>
                         <li class="gallery__item">
-                            <a href="#" class="gallery__link">
-                                <div class="card">
-                                    <img src="assets/img/psevdo-vitrazhі.jpg" alt="closet mirror" class="img-gallery">
+                            <a href="#" class="gallery__link" data-micromodal-trigger="gallery-modal" id="vitrage">
+                                <div class="card" style="background-image: url(assets/img/psevdo-vitrazhі.jpg);">
                                     <div class="card__body">
                                         <div class="card__title"><strong>Псевдовітражі</strong><br>скло</div>
                                     </div>
@@ -101,9 +93,8 @@
                             </a>
                         </li>
                         <li class="gallery__item">
-                            <a href="#" class="gallery__link">
-                                <div class="card">
-                                    <img src="assets/img/table.jpg" alt="wall-mounted mirror" class="img-gallery">
+                            <a href="#" class="gallery__link" data-micromodal-trigger="gallery-modal" id="tables">
+                                <div class="card" style="background-image: url(assets/img/table.jpg);">
                                     <div class="card__body">
                                         <div class="card__title"><strong>Столи</strong><br>скло</div>
                                     </div>
@@ -111,11 +102,10 @@
                             </a>
                         </li>
                         <li class="gallery__item">
-                            <a href="#" class="gallery__link">
-                                <div class="card">
-                                    <img src="assets/img/glass-door.jpg" alt="door glass" class="img-gallery">
+                            <a href="#" class="gallery__link" data-micromodal-trigger="gallery-modal" id="typeGlass">
+                                <div class="card" style="background-image: url(assets/img/glass-door.jpg);">
                                     <div class="card__body">
-                                        <div class="card__title"><strong>Дверне</strong><br>скло</div>
+                                        <div class="card__title"><strong>Каталог</strong><br>видів скла</div>
                                     </div>
                                 </div>
                             </a>
@@ -158,12 +148,7 @@
 
         </section>
     </main>
-    <div id="galleryModal" class="modal">
-        <div class="modal__content">
 
-        </div>
-    </div>
-    <div class="backdrop"></div>
     <footer class="footer text_small">
         <div class="container">
             <a href="#" class="logo-footer">
@@ -201,8 +186,23 @@
     </footer>
 
 </div>
-
+<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script src="build/main.js"></script>
+<!--    MODAL   -->
+
+<div class="micromodal-slide modal gallery-modal" id="gallery-modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container swiper-container" role="dialog" aria-modal="true" id="gallery-slider">
+            <div class="swiper-wrapper"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

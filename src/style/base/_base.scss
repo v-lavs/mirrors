@@ -26,8 +26,8 @@ body {
 
 .section{
   text-align: center;
-  padding-bottom: 45px;
-  padding-top: 60px;
+  padding-bottom: 80px;
+  padding-top: 30px;
   &__heading{
     text-align: center;
     color: $black;
@@ -52,12 +52,15 @@ body {
   }
 
 }
-
+.main-page{
+  padding-top: 120px;
+}
 .page__title{
   font-weight: 900;
-  font-size: 78px;
+  //font-size: 78px;
   color: $primary-color;
   text-align: left;
+  line-height: 1.5;
 }
 
 .backdrop {
