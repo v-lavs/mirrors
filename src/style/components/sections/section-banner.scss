@@ -1,0 +1,22 @@
+
+.section-banner{
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+  &__content{
+    .text{
+      max-width: 658px;
+      margin-bottom: 50px;
+      &_bold{
+        margin-bottom: 20px;
+        display: inline-block;
+      }
+    }
+  }
+  .slogan-reflection{
+    line-height: .8;
+    margin-top: -50px;
+    opacity: 0.3;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+}

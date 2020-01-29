@@ -1,0 +1,51 @@
+html {
+  font: 400 18px/1.77 $primary-fonts;
+}
+
+body {
+  background: $white;
+}
+
+.wrapper {
+  overflow: hidden;
+
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.section{
+  text-align: center;
+  padding-bottom: 80px;
+  padding-top: 60px;
+  &__heading{
+    text-align: center;
+    color: $black;
+    margin: 0 auto 60px;
+    .sub-title{
+      margin: 0 auto;
+      max-width: 374px;
+    }
+  }
+}
+.title {
+  font-family: $primary-fonts;
+  font-weight: 900;
+  line-height: 2;
+  background: linear-gradient(92deg, #3567B7 0%, #234276 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(35, 66, 118, .2);
+}
+

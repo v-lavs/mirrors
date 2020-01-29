@@ -1,0 +1,28 @@
+/**
+*TEXT UTILITIES
+*/
+
+.text {
+  &_big{
+    font-size: 86px;
+  }
+  &_xl {
+    font-size: 48px;
+  }
+  &_medium {
+    font-size: 36px;
+  }
+  &_small {
+    font-size: 16px;
+  }
+  &_xs{
+    font-size: 15px;
+  }
+  &_uppercase {
+    text-transform: uppercase;
+  }
+  &_left{
+    text-align: left;
+  }
+}
+

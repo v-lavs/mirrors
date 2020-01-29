@@ -1,0 +1,101 @@
+.burger {
+  display: none;
+  width: 80px;
+  background-color: transparent;
+  border: none;
+  margin-left: 17px;
+
+  .line {
+    display: block;
+    width: 100%;
+    background-color: #999999;
+    height: 3px;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: $white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03), 0 4px 6px rgba(0, 0, 0, 0.03);
+  padding: 12px 0;
+  z-index: 1000;
+  font-size: 16px;
+  font-family: $secondary-fonts;
+  line-height: 1.9;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+  }
+
+  .main-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 178px;
+
+    .wrap-img-logo {
+      width: 47px;
+      height: 47px;
+      flex-shrink: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .site-title {
+      padding-left: 10px;
+    }
+  }
+
+  .right-bar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 44px;
+    font-weight: 300;
+    &:before{
+      position: absolute;
+      content: '';
+      display: block;
+      background-image: url(../assets/img/icons/call-answer-gradient.svg);
+      width: 24px;
+      height: 24px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+
+    }
+
+
+  }
+}
+
+//  ------ backdrop
+
+.backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: .5;
+  z-index: 800;
+}
+

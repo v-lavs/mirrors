@@ -1,0 +1,28 @@
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  color: $white;
+  background: linear-gradient(92deg, #3567B7 0%, #234276 100%);
+  box-shadow: 0 20px 25px rgba(19, 31, 53, 0.15), 0 10px 10px rgba(51, 51, 51, 0.08);
+  border-radius: 4px;
+  border: none;
+  padding: 10px 46px;
+  transition: background .5s;
+  line-height: 1.4;
+
+&_main{
+  padding-left: 70px;
+  padding-right: 70px;
+}
+  &_round {
+    border-radius: 8px;
+  }
+
+  &:hover,
+  &:focus {
+    transition: background .5s;
+    background: linear-gradient(92deg, #234276 0%, #3567B7 100%);
+  }
+}
