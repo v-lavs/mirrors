@@ -176,3 +176,11 @@
     }
   }
 }
+
+@media all and (max-width: 540px) {
+  .section-contact {
+    .content-part_left {
+      padding-bottom: 40px;
+    }
+  }
+}

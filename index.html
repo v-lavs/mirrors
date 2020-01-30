@@ -25,13 +25,9 @@
                 <h1 class="title site-title text_small">СклоМайстер</h1>
             </a>
 
-
             <nav class="main-nav">
                 <button class="btn-close"><span class="icon icon-close"></span></button>
-                <div class="right-bar right-bar_mob">
-                    <a href="tel:(032) 232-26-71" class="right-bar__link">(032) 232-26-71</a>
-                    <a href="tel:(032) 232-26-09" class="right-bar__link">(032) 232-26-09</a>
-                </div>
+
                 <ul class="menu">
                     <li class="menu__item">
                         <a href="index.html" class="menu__link">Головна</a>
@@ -248,12 +244,13 @@
     </footer>
 
 </div>
-<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
-<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-<script src="build/main.js"></script>
+
 <!--    MODAL   -->
 <div class="micromodal-slide modal gallery-modal" id="gallery-modal" aria-hidden="true">
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <button class="modal__close icon icon-close" aria-label="Close modal" data-micromodal-close>
+        </button>
+
         <div class="modal__container swiper-container" role="dialog" aria-modal="true" id="gallery-slider">
             <div class="swiper-wrapper"></div>
             <!-- Add Pagination -->
@@ -264,5 +261,10 @@
         </div>
     </div>
 </div>
+
+<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="build/main.js"></script>
+
 </body>
 </html>

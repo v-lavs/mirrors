@@ -58,6 +58,7 @@
 
     .site-title {
       padding-left: 10px;
+      margin: 0;
     }
   }
 
@@ -97,9 +98,7 @@
         text-decoration: underline;
         transition: .5s;
       }
-
     }
-
   }
 }
 
@@ -136,24 +135,18 @@
   }
 }
 
-@include respond-to($xs) {
+@media all and (max-width: 540px) {
   .header {
-    .burger{
-      width: 28px;
-      .line{
-        margin-bottom: 6px;
-      }
-    }
-    .right-bar{
-      display: none;
-    }
-    .right-bar_mob {
-      display: flex;
-      margin-left: 20px;
+    .right-bar {
+      margin: 0;
     }
 
     .main-logo {
-      width: 140px;
+      width: auto;
+
+      .site-title {
+        display: none;
+      }
 
       .text_small {
         font-size: 13px;
@@ -166,6 +159,18 @@
       .wrap-img-logo {
         width: 38px;
         height: 38px;
+      }
+    }
+  }
+}
+
+@include respond-to($xs) {
+  .header {
+    .burger {
+      width: 28px;
+
+      .line {
+        margin-bottom: 6px;
       }
     }
   }

@@ -109,12 +109,6 @@
   }
 }
 
-@include respond-to($xl) {
-  .section-banner {
-
-  }
-}
-
 @include respond-to($md) {
   .section-banner {
     .slider-banner__slide{
@@ -123,10 +117,6 @@
       background-position: right 32% bottom;
     }
   }
-}
-
-@include respond-to($sm) {
-
 }
 
 @include respond-to($xs) {
