@@ -1,16 +1,16 @@
 .burger {
   display: none;
-  width: 80px;
+  width: 35px;
   background-color: transparent;
   border: none;
-  margin-left: 17px;
+  margin-left: 30px;
 
   .line {
     display: block;
     width: 100%;
-    background-color: #999999;
+    background: linear-gradient(92deg, #3567B7 0%, #234276 100%);
     height: 3px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 
     &:last-child {
       margin-bottom: 0;
@@ -69,7 +69,7 @@
     font-weight: 300;
     color: $primary-color;
 
-    &:before{
+    &:before {
       position: absolute;
       content: '';
       display: block;
@@ -81,11 +81,18 @@
       transform: translateY(-50%);
       z-index: 2;
     }
-    &__link{
+
+    &_mob {
+      display: none;
+
+    }
+
+    &__link {
       color: inherit;
       transition: .5s;
+
       &:hover,
-      &:focus{
+      &:focus {
         color: $blue;
         text-decoration: underline;
         transition: .5s;
@@ -110,3 +117,56 @@
   z-index: 800;
 }
 
+
+@include respond-to($lg) {
+  .header {
+    .right-bar {
+      margin-left: auto;
+      line-height: 1.5;
+    }
+  }
+}
+
+@include respond-to($sm) {
+  .header {
+    .right-bar {
+      font-size: 15px;
+      padding-left: 35px;
+    }
+  }
+}
+
+@include respond-to($xs) {
+  .header {
+    .burger{
+      width: 28px;
+      .line{
+        margin-bottom: 6px;
+      }
+    }
+    .right-bar{
+      display: none;
+    }
+    .right-bar_mob {
+      display: flex;
+      margin-left: 20px;
+    }
+
+    .main-logo {
+      width: 140px;
+
+      .text_small {
+        font-size: 13px;
+      }
+
+      .site-title {
+        padding-left: 5px;
+      }
+
+      .wrap-img-logo {
+        width: 38px;
+        height: 38px;
+      }
+    }
+  }
+}

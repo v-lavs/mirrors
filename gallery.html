@@ -52,7 +52,7 @@
     </header>
     <main class="main main-page page-gallery">
         <div class="container">
-                <h2 class="page__title  text_xxl">Галерея</h2>
+            <h2 class="page__title  text_xxl">Галерея</h2>
             <section class="section section-gallery text_xs">
                 <div class="container">
                     <ul class="gallery">
@@ -192,7 +192,12 @@
 <!--    MODAL   -->
 
 <div class="micromodal-slide modal gallery-modal" id="gallery-modal" aria-hidden="true">
+
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+            <span class="icon icon-close"></span>
+        </button>
+
         <div class="modal__container swiper-container" role="dialog" aria-modal="true" id="gallery-slider">
             <div class="swiper-wrapper"></div>
             <!-- Add Pagination -->

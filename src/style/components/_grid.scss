@@ -1,5 +1,3 @@
-//@import "../../../node_modules/bootstrap-4-grid/scss/grid.scss";
-
 
 @include respond-to($xl) {
   .container {
@@ -23,6 +21,12 @@
 @include respond-to($sm) {
   .container {
     max-width: 540px;
+  }
+}
+
+@include respond-to($xs) {
+  .container {
+    max-width: 100%;
   }
 }
 

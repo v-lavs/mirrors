@@ -17,6 +17,18 @@
   width: 80%;
 
 }
+.modal__overlay{
+  .modal__close {
+    position: absolute;
+    background: transparent;
+    top: 40px;
+    right: 40px;
+    border: 0;
+    color: $white;
+    font-size: 18px;
+  }
+}
+
 
 /**************************\
   Demo Animation Style

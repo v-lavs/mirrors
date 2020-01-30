@@ -90,3 +90,21 @@
     box-sizing: content-box;
   }
 }
+
+@include respond-to($lg){
+.section-banner{
+
+}
+}
+
+@include respond-to($md){
+
+}
+
+@include respond-to($sm){
+
+}
+
+@include respond-to($xs){
+
+}

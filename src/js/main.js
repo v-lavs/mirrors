@@ -94,6 +94,7 @@ $(document).ready(function () {
         disableScroll: true,
         awaitOpenAnimation: true,
         awaitCloseAnimation: true,
+
         onShow: function (modal, trigger) {
             var slides = prepareSlides(categoriesPhotos[trigger.id] || []);
             gallerySlider = new Swiper('#gallery-slider', {

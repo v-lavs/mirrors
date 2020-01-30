@@ -16,7 +16,7 @@
       left: 35px;
       right: 35px;
       bottom: 50px;
-      height: 1px;
+      height: 40px;
       box-shadow: 0 20px 25px rgba(32, 35, 40, 0.25), 0 10px 10px rgba(32, 35, 40, 0.1);
       z-index: 1;
     }
@@ -165,4 +165,24 @@
     transform: translateX(-50%);
     bottom: 0;
   }
+}
+
+@include respond-to($lg){
+  .gallery{
+
+  }
+}
+
+@include respond-to($md){
+  .gallery{
+
+  }
+}
+
+@include respond-to($sm){
+
+}
+
+@include respond-to($xs){
+
 }

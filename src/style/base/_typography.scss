@@ -29,3 +29,35 @@
   }
 }
 
+@include respond-to($lg){
+  .text{
+    &_big{
+      font-size: 70px;
+    }
+  }
+
+}
+
+@include respond-to($md){
+  .text{
+    &_big{
+      font-size: 50px;
+    }
+  }
+}
+
+@include respond-to($sm){
+  .text{
+    &_big{
+      font-size: 43px;
+    }
+  }
+}
+
+@include respond-to($xs){
+  .text{
+    &_big{
+      font-size: 35px;
+    }
+  }
+}
