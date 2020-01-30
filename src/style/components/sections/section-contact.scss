@@ -10,6 +10,7 @@
     width: 50%;
 
     &_left {
+      text-align: left;
       background-color: $white;
       padding-bottom: 100px;
       box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.06), 0px 10px 10px rgba(0, 0, 0, 0.03);
@@ -26,7 +27,7 @@
 
 .form-contact {
   max-width: 570px;
-  padding-top: 80px;
+  padding-top: 65px;
   padding-right: 100px;
   font-family: $primary-fonts;
   font-weight: 500;
@@ -55,6 +56,7 @@
   }
 
   .heading {
+    text-align: left;
     margin-bottom: 65px;
   }
 
@@ -70,40 +72,54 @@
       border-radius: 4px;
     }
   }
-  .btn-submit{
+
+  .btn-submit {
     margin-top: 5px;
   }
 }
 
-@include respond-to($lg){
-  .section-contact{
-    .form-contact{
+@include respond-to($lg) {
+  .section-contact {
+    .form-contact {
       width: 97%;
       padding-left: 15px;
       padding-right: 70px;
     }
   }
- }
+}
 
-@include respond-to($md){
-  .section-contact{
-    .content-part{
+@include respond-to($md) {
+  .section-contact {
+    .content-part {
       width: 100%;
     }
-    .form-contact{
-      padding-right: 0;
+
+    .form-contact {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
       margin: 0 auto;
     }
-    .map-container{
+
+    .map-container {
       min-height: 450px;
     }
   }
 }
 
-@include respond-to($sm){
+@include respond-to($sm) {
 
 }
 
-@include respond-to($xs){
+@include respond-to($xs) {
+  .section-contact {
+    .content-part_left {
+      padding-bottom: 70px;
+    }
 
+    .form-contact {
+      padding-top: 20px;
+    }
+
+  }
 }

@@ -148,12 +148,13 @@
   }
 
   .swiper-button-next {
-    background: linear-gradient(90deg,rgba(255, 255, 255, .32) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, .32) 0%, rgba(255, 255, 255, 0) 100%);
   }
-  .swiper-pagination{
+
+  .swiper-pagination {
     width: 91px;
     height: 40px;
-    background: rgba(19,31,53, .4);
+    background: rgba(19, 31, 53, .4);
     border-radius: 4px;
     color: $white;
     font-family: $secondary-fonts;
@@ -167,22 +168,41 @@
   }
 }
 
-@include respond-to($lg){
-  .gallery{
+@include respond-to($lg) {
+  .gallery-modal {
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 73px;
+      min-height: 284px;
 
+    }
+    .swiper-button-next{
+      right: 14px;
+    }
+    .swiper-button-prev{
+      left: 14px;
+    }
   }
 }
 
-@include respond-to($md){
-  .gallery{
-
+@include respond-to($md) {
+  .gallery {
+    &__item {
+      width: 50%;
+    }
+  }
+  .gallery-modal {
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
   }
 }
 
-@include respond-to($sm){
-
-}
-
-@include respond-to($xs){
-
+@include respond-to($sm) {
+  .gallery {
+    &__item {
+      width: 100%;
+    }
+  }
 }

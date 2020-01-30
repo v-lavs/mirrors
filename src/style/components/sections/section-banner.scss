@@ -1,37 +1,42 @@
-.section-banner{
+.section-banner {
+  padding-top: 70px;
   display: flex;
   align-items: center;
-  padding-bottom: 5px;
-  &__content{
-    .text{
+  padding-bottom: 20px;
+
+  &__content {
+    .text {
       max-width: 658px;
       margin-bottom: 50px;
-      &_bold{
+
+      &_bold {
         margin-bottom: 20px;
         display: inline-block;
       }
     }
   }
+
   &__slogan {
     &:before,
-    &:after{
+    &:after {
       content: attr(title);
     }
+
     &:after {
       display: flex;
       line-height: .8;
-      margin-top: -.5em;
+      margin-top: -.4em;
       opacity: 0.3;
       transform: matrix(1, 0, 0, -1, 0, 0);
-      height: .5em;
+      height: .6em;
       align-items: flex-end;
       overflow: hidden;
       color: inherit;
     }
   }
 
-  .slider-banner{
-    &__slide{
+  .slider-banner {
+    &__slide {
       background-position: center center;
       background-repeat: no-repeat;
       -webkit-background-size: cover;
@@ -40,21 +45,24 @@
       max-height: 950px;
       padding-top: 210px;
       padding-bottom: 100px;
+
       .title {
         &:after {
           color: inherit;
           @supports ((background-clip: text)  or  (-webkit-background-clip: text)) {
-            background: linear-gradient(0deg, rgb(35, 66, 118) 0%, rgba(255,255,255, 0) 100%);
+            background: linear-gradient(0deg, rgb(35, 66, 118) 0%, rgba(255, 255, 255, 0) 100%);
             -webkit-background-clip: text;
             background-clip: text;
             color: rgba(35, 66, 118, .2);
           }
         }
       }
-      &_dark{
+
+      &_dark {
         position: relative;
         color: $white;
-        &:before{
+
+        &:before {
           position: absolute;
           content: '';
           display: block;
@@ -65,12 +73,14 @@
           background: linear-gradient(180deg, #1E2731 20%, rgba(30, 39, 49, 0) 130%);
           z-index: 0;
         }
+
         .title {
           color: $white;
+
           &:after {
             color: $white;
             @supports ((background-clip: text)  or  (-webkit-background-clip: text)) {
-              background: linear-gradient(0deg, $white 0%, rgba(255,255,255, 0) 100%);
+              background: linear-gradient(0deg, $white 0%, rgba(255, 255, 255, 0) 100%);
               -webkit-background-clip: text;
               background-clip: text;
               color: rgba(255, 255, 255, .2);
@@ -80,31 +90,47 @@
       }
     }
 
-    .section-banner__content{
+    .section-banner__content {
       position: relative;
       z-index: 1;
     }
   }
-  .swiper-container{
+
+  .swiper-container {
     width: 100%;
     box-sizing: content-box;
   }
 }
 
-@include respond-to($lg){
-.section-banner{
+@include respond-to($lg) {
+  .section-banner {
 
-}
-}
-
-@include respond-to($md){
-
+  }
 }
 
-@include respond-to($sm){
+@include respond-to($md) {
+  .section-banner {
+    .slider-banner__slide{
+      max-height: 800px;
+      padding-top: 120px;
+      background-position: right 32% bottom;
+    }
+  }
+}
+
+@include respond-to($sm) {
 
 }
 
-@include respond-to($xs){
+@include respond-to($xs) {
+  .section-banner {
+    .slider-banner__slide{
+      padding-bottom: 50px;
+      max-height: 800px;
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
 
 }

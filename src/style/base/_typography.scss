@@ -28,11 +28,18 @@
     text-align: left;
   }
 }
-
+@media screen and (max-width: 1200px){
+  .text_big{
+    font-size: 72px;
+  }
+}
 @include respond-to($lg){
   .text{
     &_big{
-      font-size: 70px;
+      font-size: 50px;
+    }
+    &_xxl{
+      font-size: 58px;
     }
   }
 
@@ -41,23 +48,41 @@
 @include respond-to($md){
   .text{
     &_big{
-      font-size: 50px;
+      font-size: 48px;
+    }
+    &_xxl{
+      font-size: 48px;
     }
   }
 }
-
+@media screen and (max-width: 670px){
+  .text_big{
+    font-size: 39px;
+  }
+}
 @include respond-to($sm){
   .text{
     &_big{
-      font-size: 43px;
+      font-size: 37px;
     }
   }
 }
-
+@media screen and (max-width: 520px){
+  .text_big{
+    font-size: 33px;
+  }
+}
 @include respond-to($xs){
   .text{
     &_big{
-      font-size: 35px;
+      font-size: 29px;
+    }
+    &_xl{
+      font-size: 29px;
+      line-height: 1.1;
+    }
+    &_medium{
+      font-size: 26px;
     }
   }
 }

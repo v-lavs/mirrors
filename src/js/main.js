@@ -3,7 +3,7 @@
  * */
 
 //= include ../lib/jquery-3.3.1.min.js
-//= include ../lib/owl-slider/js/build.js
+
 
 
 /**
