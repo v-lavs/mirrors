@@ -62,14 +62,12 @@ body {
   .section__text {
     text-align: left;
 
-    p {
-      margin-bottom: 35px;
-    }
-
-    strong {
+    h3 {
       font-size: 32px;
       font-weight: 700;
       color: $primary-color;
+      margin-bottom: 35px;
+      line-height: 1.2;
     }
   }
 
@@ -133,16 +131,17 @@ body {
     font-size: 48px;
   }
   .dynamic-content {
-    p {
-      margin-bottom: 15px;
-    }
+    .section__text{
 
-    strong {
-      font-size: 20px;
+      h3 {
+         font-size: 20px;
+        margin-bottom: 15px;
+       }
     }
   }
   .section{
     padding-bottom: 30px;
+    padding-top: 20px;
   }
 }
 

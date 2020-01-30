@@ -99,6 +99,7 @@ $(document).ready(function () {
             var slides = prepareSlides(categoriesPhotos[trigger.id] || []);
             gallerySlider = new Swiper('#gallery-slider', {
                 speed: 800,
+                spaceBetween: 30,
                 loop: true,
                 pagination: {
                     el: '.swiper-pagination',
