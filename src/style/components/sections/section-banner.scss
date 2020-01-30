@@ -25,7 +25,7 @@
     &:after {
       display: flex;
       line-height: .8;
-      margin-top: -.4em;
+      margin-top: -.25em;
       opacity: 0.3;
       transform: matrix(1, 0, 0, -1, 0, 0);
       height: .6em;
@@ -102,7 +102,14 @@
   }
 }
 
-@include respond-to($lg) {
+@media all and (max-height: 800px) {
+  .section-banner .slider-banner__slide {
+    max-height: none;
+    height: auto;
+  }
+}
+
+@include respond-to($xl) {
   .section-banner {
 
   }
@@ -129,8 +136,4 @@
       max-height: 800px;
     }
   }
-}
-
-@media screen and (max-width: 1600px) {
-
 }

@@ -28,7 +28,7 @@
     text-align: left;
   }
 }
-@media screen and (max-width: 1200px){
+@include respond-to($xl) {
   .text_big{
     font-size: 72px;
   }
@@ -41,8 +41,11 @@
     &_xxl{
       font-size: 58px;
     }
-  }
 
+    &_medium {
+      font-size: 32px;
+    }
+  }
 }
 
 @include respond-to($md){

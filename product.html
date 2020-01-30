@@ -27,7 +27,7 @@
 
 
             <nav class="main-nav">
-                <button class="btn-close"></button>
+                <button class="btn-close"><span class="icon icon-close"></span></button>
                 <div class="right-bar right-bar_mob">
                     <a href="tel:(032) 232-26-71" class="right-bar__link">(032) 232-26-71</a>
                     <a href="tel:(032) 232-26-09" class="right-bar__link">(032) 232-26-09</a>
@@ -64,28 +64,27 @@
     </header>
 
     <main class="main main-page page-product" style="background-image: url(assets/img/bg-products.png);">
-
-            <div class="container">
-                <h2 class="page__title  text_xxl">Продукція</h2>
-                <section class="section section-products dynamic-content">
-                    <div class="section__text">
-                        <p><strong>В нас ви можете придбати:</strong></p>
-                    </div>
-                    <ul>
-                        <li>Скло віконне 2, 3, 4, 5, 6, 8, 10 мм;</li>
-                        <li>Скло вітринне розміри 3210*2250 мм;</li>
-                        <li>Скло візерункове виробництва України, Білорусії, Польщі, Туреччини;</li>
-                        <li> Скло тоноване 4, 6, 8, 10 мм;</li>
-                        <li>Армоване скло;</li>
-                        <li>Скло матове, біле, бронзове, графіт;</li>
-                        <li>Дзеркала водостійкі: срібне, бронзове, графіт;</li>
-                        <li>Дзеркала сатин;</li>
-                        <li>Скло Триплекс 6, 8 мм;</li>
-                        <li>Дзеркала настінні в асортименті близько 130 видів;</li>
-                        <li>Скло лакобел.</li>
-                    </ul>
-                </section>
-            </div>
+        <div class="container">
+            <h2 class="page__title  text_xxl">Продукція</h2>
+            <section class="section section-products dynamic-content">
+                <div class="section__text">
+                    <p><strong>В нас ви можете придбати:</strong></p>
+                </div>
+                <ul>
+                    <li>Скло віконне 2, 3, 4, 5, 6, 8, 10 мм;</li>
+                    <li>Скло вітринне розміри 3210*2250 мм;</li>
+                    <li>Скло візерункове виробництва України, Білорусії, Польщі, Туреччини;</li>
+                    <li> Скло тоноване 4, 6, 8, 10 мм;</li>
+                    <li>Армоване скло;</li>
+                    <li>Скло матове, біле, бронзове, графіт;</li>
+                    <li>Дзеркала водостійкі: срібне, бронзове, графіт;</li>
+                    <li>Дзеркала сатин;</li>
+                    <li>Скло Триплекс 6, 8 мм;</li>
+                    <li>Дзеркала настінні в асортименті близько 130 видів;</li>
+                    <li>Скло лакобел.</li>
+                </ul>
+            </section>
+        </div>
 
         <section class="section section-contact">
             <div class="container">
@@ -96,29 +95,39 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex">
+            <div class="section-contact__content container">
                 <div class="content-part content-part_left">
-                    <form action="#" class="form-contact" method="post">
-                        <div class="heading">
-                            <h3 class="title text_medium">Зв’яжіться З Нами</h3>
-                            <div class="sub-title">
-                                Заповніть поля контактними даними і ми обов’язково Вам зателефонуємо
+                    <div class="form-container">
+                        <form action="#" class="form-contact" method="post">
+                            <div class="heading">
+                                <h3 class="title text_medium">Зв’яжіться З Нами</h3>
+                                <div class="sub-title">
+                                    Заповніть поля контактними даними і ми обов’язково Вам зателефонуємо
+                                </div>
                             </div>
-                        </div>
-                        <div class="form__group">
-                            <input type="text" class="input" placeholder="Ім’я">
-                            <input type="email" class="input" placeholder="dan.romero@example.com">
-                            <input type="tel" class="input" placeholder="Номер телефону">
-                            <button class="btn btn_main btn-submit" type="submit">Відправити</button>
-                        </div>
-                    </form>
+                            <div class="form__group">
+                                <div class="form__row">
+                                    <input type="text" class="input" placeholder="Ім’я">
+                                </div>
+                                <div class="form__row">
+                                    <input type="email" class="input" placeholder="dan.romero@example.com">
+                                </div>
+                                <div class="form__row">
+                                    <input type="tel" class="input" placeholder="Номер телефону">
+                                </div>
+                                <div class="form__row">
+                                    <button class="btn btn_main btn-submit" type="submit">Відправити</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <div class="map-container content-part">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5144.846992854877!2d24.0440482!3d49.853289!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add1a67826bef%3A0xdb25bd1a676ab05c!2z0LLRg9C70LjRhtGPINCR0L7Qs9C00LDQvdCwINCl0LzQtdC70YzQvdC40YbRjNC60L7Qs9C-LCAxMTYsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1580246138474!5m2!1suk!2sua"
+                    <iframe class="map"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5144.846992854877!2d24.0440482!3d49.853289!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add1a67826bef%3A0xdb25bd1a676ab05c!2z0LLRg9C70LjRhtGPINCR0L7Qs9C00LDQvdCwINCl0LzQtdC70YzQvdC40YbRjNC60L7Qs9C-LCAxMTYsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1580246138474!5m2!1suk!2sua"
                             width="600" height="585" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 </div>
             </div>
-
         </section>
     </main>
 
