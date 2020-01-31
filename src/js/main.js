@@ -3,6 +3,7 @@
  * */
 
 //= include ../lib/jquery-3.3.1.min.js
+//= include ../lib/micromodal.js
 
 
 
@@ -89,6 +90,7 @@ $(document).ready(function () {
     };
 
     var gallerySlider;
+    console.log(MicroModal)
 
     var galleryModal = MicroModal.init({
         disableScroll: true,
