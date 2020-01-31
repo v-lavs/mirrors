@@ -90,7 +90,6 @@ $(document).ready(function () {
     };
 
     var gallerySlider;
-    console.log(MicroModal)
 
     var galleryModal = MicroModal.init({
         disableScroll: true,
@@ -99,20 +98,21 @@ $(document).ready(function () {
 
         onShow: function (modal, trigger) {
             var slides = prepareSlides(categoriesPhotos[trigger.id] || []);
-            gallerySlider = new Swiper('#gallery-slider', {
-                speed: 800,
-                spaceBetween: 30,
-                // loop: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                    type: 'fraction',
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-            gallerySlider.appendSlide(slides);
+            setTimeout(function () {
+                gallerySlider = new Swiper('#gallery-slider', {
+                    speed: 800,
+                    spaceBetween: 30,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        type: 'fraction',
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+                gallerySlider.appendSlide(slides);
+            }, 100);
         },
         onClose: function () {
             gallerySlider.destroy(true, true);
