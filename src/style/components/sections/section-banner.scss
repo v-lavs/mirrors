@@ -101,6 +101,13 @@
   }
 }
 
+@media all and (max-height: 800px) {
+  .section-banner .slider-banner__slide {
+    max-height: none;
+    height: auto;
+  }
+}
+
 @include respond-to($md) {
   .section-banner {
     .slider-banner__slide {
