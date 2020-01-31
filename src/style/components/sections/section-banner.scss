@@ -111,7 +111,7 @@
 
 @include respond-to($md) {
   .section-banner {
-    .slider-banner__slide{
+    .slider-banner__slide {
       max-height: 800px;
       padding-top: 120px;
       background-position: right 32% bottom;
@@ -121,9 +121,18 @@
 
 @include respond-to($xs) {
   .section-banner {
-    .slider-banner__slide{
+    .slider-banner__slide {
       padding-bottom: 50px;
+      padding-top: 90px;
       max-height: 800px;
+    }
+  }
+}
+
+@media all and (max-width: 360px) {
+  .section-banner {
+    .slider-banner__slide {
+      padding-top: 40px;
     }
   }
 }
