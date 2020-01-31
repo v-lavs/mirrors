@@ -96,22 +96,19 @@ $(document).ready(function () {
         awaitCloseAnimation: true,
         onShow: function (modal, trigger) {
             var slides = prepareSlides(categoriesPhotos[$(trigger).attr("id")] || []);
-            console.log($(trigger).attr("id"), trigger, $(trigger))
-            setTimeout(function () {
-                gallerySlider = new Swiper('#gallery-slider', {
-                    speed: 800,
-                    spaceBetween: 30,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        type: 'fraction',
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                });
-                gallerySlider.appendSlide(slides);
-            }, 100);
+            gallerySlider = new Swiper('#gallery-slider', {
+                speed: 800,
+                spaceBetween: 30,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'fraction',
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+            gallerySlider.appendSlide(slides);
         },
         onClose: function () {
             gallerySlider.destroy(true, true);
