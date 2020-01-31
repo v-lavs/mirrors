@@ -98,6 +98,8 @@ $(document).ready(function () {
 
         onShow: function (modal, trigger) {
             var slides = prepareSlides(categoriesPhotos[trigger.id] || []);
+            alert(trigger.id)
+            alert (slides[0], )
             setTimeout(function () {
                 gallerySlider = new Swiper('#gallery-slider', {
                     speed: 800,
