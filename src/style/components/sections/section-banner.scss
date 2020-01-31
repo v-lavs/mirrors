@@ -42,7 +42,6 @@
       -webkit-background-size: cover;
       background-size: cover;
       height: 100vh;
-      max-height: 950px;
       padding-top: 210px;
       padding-bottom: 100px;
 
@@ -102,17 +101,9 @@
   }
 }
 
-@media all and (max-height: 800px) {
-  .section-banner .slider-banner__slide {
-    max-height: none;
-    height: auto;
-  }
-}
-
 @include respond-to($md) {
   .section-banner {
     .slider-banner__slide {
-      max-height: 800px;
       padding-top: 120px;
       background-position: right 32% bottom;
     }
@@ -124,7 +115,6 @@
     .slider-banner__slide {
       padding-bottom: 50px;
       padding-top: 90px;
-      max-height: 800px;
     }
   }
 }
