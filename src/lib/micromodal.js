@@ -93,10 +93,10 @@ var MicroModal = function () {
                 }
             }, {
                 key: "showModal",
-                value: function showModal() {
+                value: function showModal(event) {
                     var _this2 = this;
 
-                    this.activeElement = document.activeElement;
+                    this.activeElement = event.currentTarget;
                     this.modal.setAttribute('aria-hidden', 'false');
                     this.modal.classList.add('is-open');
                     this.scrollBehaviour('disable');
