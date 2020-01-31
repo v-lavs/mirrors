@@ -97,7 +97,7 @@ $(document).ready(function () {
         awaitCloseAnimation: true,
 
         onShow: function (modal, trigger) {
-            var slides = prepareSlides(categoriesPhotos[$(trigger).attr("i d")] || []);
+            var slides = prepareSlides(categoriesPhotos[$(trigger).attr("id")] || []);
 
             setTimeout(function () {
                 gallerySlider = new Swiper('#gallery-slider', {
