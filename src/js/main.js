@@ -6,7 +6,6 @@
 //= include ../lib/micromodal.js
 
 
-
 /**
  * CUSTOM SCRIPTS
  **/
@@ -95,10 +94,9 @@ $(document).ready(function () {
         disableScroll: true,
         awaitOpenAnimation: true,
         awaitCloseAnimation: true,
-
         onShow: function (modal, trigger) {
             var slides = prepareSlides(categoriesPhotos[$(trigger).attr("id")] || []);
-console.log($(trigger).attr("id"), trigger, $(trigger))
+            console.log($(trigger).attr("id"), trigger, $(trigger))
             setTimeout(function () {
                 gallerySlider = new Swiper('#gallery-slider', {
                     speed: 800,
